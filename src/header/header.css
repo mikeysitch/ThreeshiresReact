@@ -1,0 +1,8 @@
+header {
+  background-color: rgb(95, 127, 140);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}

@@ -1,0 +1,92 @@
+/* contact and map */
+
+#contactmap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+#contacttitle {
+  text-align: center;
+  padding: 0px 0;
+  font-size: 2.3em;
+  background-color: black;
+  color: white;
+}
+
+#contacttitle h3 {
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+#contacttitle h3:first-child {
+  background-color: var(--primary-blue);
+}
+
+#map {
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+}
+
+#map_img_container {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#map_img_container img {
+  height: 320px;
+  width: 85%;
+}
+
+#map_info {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+#map_info button {
+  background-color: black;
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1em;
+}
+
+#map_info img {
+  height: 100px;
+  margin: 80px 0px;
+}
+
+#contactInfo {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--primary-blue);
+  justify-content: space-between;
+  padding: 20px;
+}
+
+#contactInfo div {
+  text-align: center;
+}
+
+#contactInfo div h4 {
+  color: white;
+  margin-top: 10px;
+  font-weight: 400;
+}
+/* snag list: 
+  -full plasma cutting service spacing 
+  -all buttons to uniform size
+  -contact logo & address to be moved up.
+  -link nav links to page
+  -add icons to cutting section
+  */

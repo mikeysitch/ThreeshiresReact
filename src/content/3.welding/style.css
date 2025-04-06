@@ -1,0 +1,104 @@
+#businessWelding {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  height: auto;
+}
+
+#bW_leftside {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../../public/assets/images/weld-grad.gif");
+  background-size: cover;
+  background-position: center;
+  background-position: center;
+  z-index: 1;
+}
+
+#bW_leftside div {
+  width: 100%;
+  flex: 1;
+}
+
+#bW_leftside #title h2 {
+  padding: 20px;
+  font-size: 4em;
+  color: white;
+  font-weight: 600;
+}
+
+#bW_leftside #bW_ls_explanation {
+  padding: 20px;
+  flex: 0;
+}
+
+#bW_leftside #bW_ls_explanation p {
+  width: 65%;
+  line-height: 1.6em;
+}
+
+#images {
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+  padding-top: 70px;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+#images img.img {
+  width: 33.33%;
+  height: 180px;
+}
+
+#bW_rightside {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+#process_img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+#bW_rs_middlecontainer {
+  width: 100%;
+  height: 400px;
+  margin: 80px 0;
+  margin-left: -20px;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  background-color: lightgrey;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+#bW_rs_middlecontainer div {
+  flex: 1;
+  padding: 20px;
+}
+
+#process_img {
+  margin-top: -40px;
+}
+
+.process_list h3 {
+  color: green;
+  margin-bottom: 20px;
+}
+
+#bW_rs_middlecontainer .process_list ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px 0px;
+}
+
+#bW_rs_middlecontainer .process_list li {
+}

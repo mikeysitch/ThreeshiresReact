@@ -1,0 +1,158 @@
+#plasmaCutting {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+#plasmaCutting #pC_leftside > h2 {
+  font-weight: 700;
+  font-size: 3.2em;
+  color: rgb(35, 157, 218);
+  text-align: center;
+  padding: 5px;
+}
+
+#plasmaCutting #pC_leftside {
+  width: 40%;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 10px;
+}
+
+#pC_list h3 {
+  background-color: rgb(35, 157, 218);
+  text-align: center;
+  padding: 10px;
+  font-size: 2em;
+}
+
+#pC_list ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+#pC_list ul li {
+  font-size: 1.5em;
+  margin: 5px 0;
+}
+
+#plasmaCutting #pC_rightside {
+  flex: 1;
+}
+
+#pC_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#pC_img img {
+  width: 50%;
+  height: 90px;
+}
+
+#pC_rightside {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#pC_rs_topLevel {
+  flex: 1;
+  background-image: url("../../../public/assets/images/imageedit_3_5213956773.gif");
+  background-size: cover;
+  background-position: center;
+  background-position: center;
+  background-blend-mode: darken;
+}
+
+#pC_rs_topLevel {
+  display: flex;
+  flex-direction: column;
+}
+
+#pC_list div {
+  margin: 20px;
+  background-color: #211e1e;
+  border-bottom: 10px solid var(--primary-blue);
+}
+
+#pC_rs_topLevel section {
+  flex: 1;
+}
+
+#pC_rs_topLevel section p {
+  color: white;
+  font-weight: 600;
+}
+
+#pC_rs_topLevel h2 {
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+#pC_rs_topLevel div#enquireNow {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+#pC_rs_bottomLevel h2 {
+  color: #211e1e;
+  font-weight: 600;
+}
+
+div#enquireNow button {
+  position: relative;
+  top: 30px;
+  padding: 7px 20px;
+  color: white;
+  background-color: black;
+  font-size: 1.4em;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+#pC_rs_topLevel section,
+#pC_rs_bottomLevel section {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+
+#pC_rs_topLevel section div,
+#pC_rs_bottomLevel section div {
+  width: 50%;
+}
+
+#pC_rs_bottomLevel {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-blue);
+  color: white;
+}
+
+#MaterialImgcontainer {
+  position: relative;
+  height: 5px;
+}
+
+#pC_rs_bottomLevel #MaterialImg1,
+#pC_rs_bottomLevel #MaterialImg2 {
+  width: 50%;
+  height: 150px;
+  position: absolute;
+  border-radius: 10px;
+  right: 2px;
+}
+#MaterialImg1 {
+  top: 0;
+  right: 20px;
+}
+#MaterialImg2 {
+  bottom: -20px;
+  left: 20px;
+}
