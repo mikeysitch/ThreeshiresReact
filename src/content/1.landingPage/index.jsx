@@ -4,7 +4,9 @@ export default function HeroFeature() {
     <div id="hero-img">
       <div class="container">
         <h2 class="hero-text">
-          Cutting Edge Metal Fabrications, Laser Cutting Services & Design
+          Cutting Edge Metal Fabrications,
+          <br />
+          Laser Cutting Services & Design
         </h2>
         <div class="small-text">
           <p>

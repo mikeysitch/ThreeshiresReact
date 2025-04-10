@@ -3,10 +3,16 @@
   background-size: cover;
   background-position: center;
   background-position: center;
-  height: 450px;
+  height: 700px;
   padding: 30px;
   display: flex;
   flex-direction: column;
+}
+
+@media (max-width: 1300px) {
+  #hero-img {
+    height: 500px;
+  }
 }
 
 .hero-text {
@@ -41,4 +47,9 @@
 .call_to_action {
   display: flex;
   justify-content: center;
+}
+
+/*  === MEDIA QUERIES === */
+
+@media (max-width: 500px) {
 }
