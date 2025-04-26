@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 
 /* Desktop components */
 import Header from "./header/header";
@@ -12,6 +11,10 @@ import ContactMap from "./content/5.contact";
 /* Mobile components */
 import MobileNav from "./Nav/mobile/responsiveNav";
 import { useMediaQuery } from "react-responsive";
+import ServicesMobile from "./content/2.services/mobile";
+import WeldingMobile from "./content/3.welding/mobile";
+import CuttingMobile from "./content/4.cutting/mobile";
+import ContactMapMobile from "./content/5.contact/mobile";
 
 function App() {
   const isMobile = useMediaQuery({ maxWidth: 800 });
@@ -21,16 +24,24 @@ function App() {
       <Header />
       {isMobile ? (
         <>
-          <MobileNav />
+          <MobileNav /> 
+          <HeroFeature />  
+          <ServicesMobile />
+          <WeldingMobile />
+          <CuttingMobile /> 
+          <ContactMapMobile />
         </>
       ) : (
-        <Nav />
+        <>
+        <Nav /> 
+        <HeroFeature />  
+        <Services /> 
+        <Welding />      
+        <Cutting />
+        <ContactMap />
+        </>
       )}
-      <HeroFeature />
-      <Services />
-      <Welding />
-      <Cutting />
-      <ContactMap />
+     
     </div>
   );
 }

@@ -1,16 +1,26 @@
 import "./nav.css";
 import { navItems } from "../data";
+import { useNavHandler } from "../hooks/navHandler";
 
-// creating your own HTML Tag.
-function Nav({}) {
+function Nav() {
+  const { getTargetId, handleNavClick } = useNavHandler();
+
   return (
     <nav>
       <ul className="nav-links-desktop">
-        {navItems.map((item, index) => (
-          <li key={index}>
-            <a href={`#${item.id}`}> {item.name} </a>
-          </li>
-        ))}
+        {navItems.map((item, index) => {
+          const targetId = getTargetId(item);
+          return (
+            <li key={index}>
+              <a
+                href={`#${targetId}`}
+                onClick={(e) => handleNavClick(e, targetId)}
+              >
+                {item.name}
+              </a>
+            </li>
+          );
+        })}
       </ul>
     </nav>
   );
