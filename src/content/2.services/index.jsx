@@ -9,15 +9,21 @@ export default function Services() {
   ];
 
   return (
-    <div className="w-full bg-white py-16 px-6 flex flex-col gap-10" id="services">
+    <div className="w-full mt-[30px] bg-white py-16 px-6 flex flex-col gap-10" id="services">
+
+      <div className="absolute left-0 w-full h-[350px] bg-black"></div>
+
       {/* Content Section */}
-      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-10 items-center justify-center">
+      <div className="z-10 max-w-6xl mx-auto flex flex-col lg:flex-row gap-10 items-center justify-center">
         {/* Text Content */}
         <div className="lg:w-1/2 space-y-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-600">
-            Sheet Metal Fabrication Specialists since 2001
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-600 relative">
+            Sheet Metal Fabrication 
           </h2>
-          <p className="text-lg text-gray-700 leading-relaxed">
+          <h3 className="text-3xl md:text-4xl font-bold text-blue-600 relative bottom-15">
+          Specialists since 2001
+          </h3>
+          <p className="text-lg text-white leading-relaxed">
             NC plasma cutting, plate rolling & press brake. Bespoke Fabrications
             of Cheshire are a family-run business with over 70 years of combined
             experience in the steel fabrication industry. We operate nationwide,
@@ -27,7 +33,7 @@ export default function Services() {
         </div>
 
         {/* Carousel */}
-        <div className="lg:w-1/2 w-full max-w-[500px] rounded-xl shadow-md overflow-hidden">
+        <div className="relative bottom-10 lg:w-1/2 w-full max-w-[500px] rounded-xl shadow-md overflow-hidden">
           <Fade duration={4000} arrows={false} pauseOnHover={false}>
             {images.map((src, idx) => (
               <div key={idx} className="w-full h-[300px]">
@@ -40,13 +46,6 @@ export default function Services() {
             ))}
           </Fade>
         </div>
-      </div>
-
-      {/* CTA Button */}
-      <div className="flex justify-center">
-        <h1 className="text-5xl md:text-5xl font-bold text-blue-600">
-          Our Services
-        </h1>
       </div>
     </div>
   );

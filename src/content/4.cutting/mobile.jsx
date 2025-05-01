@@ -1,7 +1,34 @@
 import LinkButton from "../../components/LinkButton";
+import { Fade } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
+
+function MaterialCarousel() {
+  const images = [
+    "/assets/images/0feb7f01-92ad-44fe-ba66-26e2894531d0.JPG",
+    "/assets/images/PHOTO-2024-11-15-20-09-12.jpg",
+  ];
+
+  return (
+    <div className="relative mt-8">
+      <Fade duration={2500} arrows={true} pauseOnHover={false}>
+        {images.map((src, idx) => (
+          <div key={idx} className="flex justify-center">
+            <img
+              src={src}
+              alt={`Material ${idx + 1}`}
+              className="w-2/3 h-64 object-cover rounded-lg"
+            />
+          </div>
+        ))}
+      </Fade>
+    </div>
+  );
+}
+
+
 export default function CuttingMobile() {
     return (
-      <div className="flex flex-col lg:flex-row w-full min-h-screen text-white bg-black" id="cutting_mobile">
+      <div className="flex flex-col lg:flex-row w-full  text-white bg-black" id="cutting_mobile">
         {/* Left Side */}
         <div className="w-full lg:w-2/5 p-6 space-y-6">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-400">
@@ -82,18 +109,7 @@ export default function CuttingMobile() {
                   Choose from a variety of sheet metals with different strengths,
                   weights, and corrosion resistance.
                 </p>
-                <div className="relative mt-4 flex gap-4">
-                  <img
-                    src="./assets/images/0feb7f01-92ad-44fe-ba66-26e2894531d0.JPG"
-                    alt="Material 1"
-                    className="w-1/2 h-36 object-cover rounded-lg"
-                  />
-                  <img
-                    src="./assets/images/PHOTO-2024-11-15-20-09-12.jpg"
-                    alt="Material 2"
-                    className="w-1/2 h-36 object-cover rounded-lg"
-                  />
-                </div>
+                <MaterialCarousel />
               </div>
             </section>
           </div>

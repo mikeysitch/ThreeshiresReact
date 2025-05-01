@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+
       {isMobile ? (
         <>
           <MobileNav /> 
@@ -32,7 +32,8 @@ function App() {
           <ContactMapMobile />
         </>
       ) : (
-        <>
+        <>      
+        <Header />
         <Nav /> 
         <HeroFeature />  
         <Services /> 

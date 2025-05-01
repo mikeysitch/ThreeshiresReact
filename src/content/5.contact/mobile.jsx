@@ -2,13 +2,13 @@ export default function ContactMapMobile() {
     return (
       <div className="w-full flex flex-col mt-12" id="contact_mobile">
         {/* Title Section */}
-        <section className="text-center text-white bg-black py-6 space-y-2 text-3xl font-bold">
-          <h3 className="bg-blue-500 inline-block px-4 py-1 rounded-md">Contact &</h3>
+        <section className="text-center text-white bg-black py-6 space-y-2 text-3xl font-bold p-3" >
+          <h3 className="bg-blue-500 inline-block px-4 py-3 w-full">Contact &</h3>
           <h3>Location</h3>
         </section>
   
         {/* Map Section */}
-        <section className="flex flex-col md:flex-row min-h-[500px] bg-gray-100">
+        <section className="flex flex-col md:flex-row min-h-[500px] bg-white">
           {/* Map Image */}
           <div className="w-full md:w-3/5 flex justify-center items-center p-6">
             <img
@@ -19,7 +19,7 @@ export default function ContactMapMobile() {
           </div>
   
           {/* Map Info */}
-          <div className="flex flex-col items-center justify-center gap-4 p-6 md:w-2/5">
+          <div className="flex flex-col items-center justify-center gap-4 p-6 md:w-2/5 ">
             <img
               src="./assets/images/dc5ca6fb-1c54-45a1-b3c7-fa31f12c31c2.JPG"
               alt="Logo"
@@ -38,9 +38,10 @@ export default function ContactMapMobile() {
               Enquire at twoshires.fabrication@outlook.com <br />
               or call 07725910601 
             </p>
-            <p>
-              <span className="font-bold">Two Shires Fabrication</span> is a family-run business with over 20 years of experience in the fabrication industry. <br />
-              We pride ourselves on our quality workmanship and customer service. Whether you're looking for bespoke metalwork, repairs, or custom fabrication,
+            <p className="my-3 px-4 text-center leading-loose">
+            Bespoke Fabrications of Cheshire are a family run business with over 70 years of combined 
+            experience in the steel fabrication industry. We operate nationwide specializing in 
+            steel beams, sheet metal, and all other forms of steel construction.
             </p>
           </div>
         </section>
