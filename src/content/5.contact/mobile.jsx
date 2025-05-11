@@ -1,9 +1,12 @@
+
+import Footer from "../../components/footer/index";
+
 export default function ContactMapMobile() {
     return (
       <div className="w-full flex flex-col mt-12" id="contact_mobile">
         {/* Title Section */}
         <section className="text-center text-white bg-black py-6 space-y-2 text-3xl font-bold p-3" >
-          <h3 className="bg-blue-500 inline-block px-4 py-3 w-full">Contact &</h3>
+          <h3 className="bg-primary inline-block px-4 py-3 w-full">Contact &</h3>
           <h3>Location</h3>
         </section>
   
@@ -37,32 +40,12 @@ export default function ContactMapMobile() {
             <p>
               Enquire at twoshires.fabrication@outlook.com <br />
               or call 07725910601 
-            </p>
-            <p className="my-3 px-4 text-center leading-loose">
-            Bespoke Fabrications of Cheshire are a family run business with over 70 years of combined 
-            experience in the steel fabrication industry. We operate nationwide specializing in 
-            steel beams, sheet metal, and all other forms of steel construction.
-            </p>
+            </p> 
           </div>
         </section>
   
         {/* Contact Info */}
-        <section className="flex flex-col md:flex-row justify-between items-center bg-blue-500 text-white p-6 gap-6 md:gap-0">
-          <div className="text-center">
-            <h3 className="text-lg font-bold">Email</h3>
-            <h4 className="mt-2 font-light">twoshires.fabrication@outlook.com</h4>
-          </div>
-          <div className="text-center">
-            <h3 className="text-lg font-bold">Phone</h3>
-            <h4 className="mt-2 font-light">07725910601</h4>
-          </div>
-          <div className="text-center">
-            <h3 className="text-lg font-bold">Address</h3>
-            <h4 className="mt-2 font-light">
-              Holme Farm, Marsh Lane, Ince, Chester CH2 4NR
-            </h4>
-          </div>
-        </section>
+        <Footer />
       </div>
     );
   }

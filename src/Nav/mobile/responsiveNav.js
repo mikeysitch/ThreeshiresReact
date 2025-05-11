@@ -15,7 +15,7 @@ export default function NavbarMobile() {
 
         <button
           type="button"
-          className="p-2 focus:outline-none bg-gray-100 rounded-lg"
+          className="ml-6 p-2 px-4 focus:outline-none bg-gray-100 rounded-lg"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? (

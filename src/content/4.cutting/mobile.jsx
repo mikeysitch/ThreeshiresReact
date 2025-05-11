@@ -31,12 +31,12 @@ export default function CuttingMobile() {
       <div className="flex flex-col lg:flex-row w-full  text-white bg-black" id="cutting_mobile">
         {/* Left Side */}
         <div className="w-full lg:w-2/5 p-6 space-y-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-400">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-primary">
             The Full Plasma Cutting Service
           </h2>
   
-          <div className="bg-gray-900 border-b-4 border-blue-500 rounded-xl p-4">
-            <h3 className="text-2xl font-semibold text-center bg-blue-500 rounded-md py-2 mb-4">
+          <div className="bg-gray-900 border-b-4 border-primary rounded-xl p-4">
+            <h3 className="text-2xl font-semibold text-center bg-prinary rounded-md py-2 mb-4">
               Full Service
             </h3>
             <ul className="space-y-2 text-lg text-center">

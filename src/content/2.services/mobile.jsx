@@ -20,7 +20,7 @@ export default function ServicesMobile() {
 
           {/* Title and Subtitle */}
           <div className="text-center px-6 pb-6 space-y-2">
-            <h2 className="inline-block bg-blue-600 text-white text-2xl font-bold px-4 py-2 rounded-lg">
+            <h2 className="inline-block bg-primary text-white text-2xl font-bold px-4 py-2 rounded-lg">
               Sheet Metal Fabrication
             </h2>
             <h3 className="text-lg italic text-gray-600">

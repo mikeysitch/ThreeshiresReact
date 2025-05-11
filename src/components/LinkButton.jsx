@@ -16,7 +16,7 @@ export default function LinkButton({ href, mobileHref, children }) {
     <button
       type="button"
       onClick={handleClick}
-      className="bg-blue-600 hover:bg-blue-700 text-white text-lg font-semibold px-6 py-3 rounded-md shadow transition-all"
+      className="bg-primary hover:bg-blue-700 text-white text-lg font-semibold px-6 py-3 rounded-md shadow transition-all"
     >
       {children}
     </button>

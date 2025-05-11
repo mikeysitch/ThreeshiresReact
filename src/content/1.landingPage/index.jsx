@@ -14,7 +14,7 @@ export default function HeroFeature() {
       {/* Text Content */}
       <div className="relative z-10 flex flex-col max-w-4xl mx-auto text-white flex-grow">
         <div className="mt-16 px-4 md:px-0">
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold drop-shadow-2xl leading-tight">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold drop-shadow-2xl leading-tight text-center md:text-left">
             Cutting Edge Metal Fabrications,
             <br />
             Laser Cutting Services & Design

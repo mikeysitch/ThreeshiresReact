@@ -3,7 +3,7 @@ export default function Welding() {
     <div>
       {/* CTA Button */}
       <div className="flex justify-center my-7">
-        <h1 className="text-5xl md:text-5xl font-bold text-blue-600">
+        <h1 className="text-5xl md:text-4xl font-bold bg-primary py-4 px-8 rounded-md text-white">
           Our Services
         </h1>
       </div>
@@ -13,14 +13,15 @@ export default function Welding() {
           className="w-full lg:w-1/2 bg-cover bg-center text-white flex flex-col py-7 gap-5"
           style={{ backgroundImage: "url('/assets/images/weld-grad.gif')" }}
         >
-          <div className="p-5">
-            <h2 className="text-4xl font-bold drop-shadow-lg">
-              Custom Fabrication
+          <div className="p-5 flex flex-col justify-center items-center lg:items-start ">
+            <h2 className="text-5xl font-bold drop-shadow-lg">
+              Custom 
             </h2>
+            <h2 className="mt-2 text-5xl font-bold drop-shadow-lg"> Fabrication </h2>
           </div>
 
-          <div className="bg-black p-5 py-10">
-            <p className="text-lg w-3/4">
+          <div className="bg-black p-5 py-10 flex justify-center lg:justify-start">
+            <p className="text-lg w-3/4 text-center lg:text-left">
               Custom welding from a team of professionals. Whether you need bespoke
               machine parts made for your factory or a set of gates and railings
               created, our custom welding services are available to domestic and
@@ -49,7 +50,7 @@ export default function Welding() {
 
         {/* Right Side */}
         <div className="w-full lg:w-1/2 p-6 space-y-6 ">
-          <div className="bg-white shadow-md rounded-xl p-4 border border-gray-200 gap-7 flex flex-col p-6">
+          <div className="bg-white shadow-md rounded-xlborder border-gray-200 gap-7 flex flex-col p-6">
 
             <div>
                 <h3 className="text-xl font-semibold text-gray-800 mb-4">

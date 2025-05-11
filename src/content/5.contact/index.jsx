@@ -1,10 +1,12 @@
 
+import Footer from "../../components/footer/index";
+
 export default function ContactMap () {
   return (
     <div className="w-full flex flex-col mt-12" id="contact">
       {/* Contact Title Section */}
       <section className="text-center text-white bg-black py-6 space-y-2 text-3xl font-bold p-3" >
-        <h3 className="bg-blue-500 inline-block px-4 py-3 w-full">Contact &</h3>
+        <h3 className="bg-primary inline-block px-4 py-3 w-full">Contact &</h3>
         <h3>Location</h3>
       </section>
 
@@ -15,7 +17,7 @@ export default function ContactMap () {
           <img
             src="/assets/images/Screenshot 2024-11-21 at 14.21.18.png"
             alt="Map"
-            className="h-[320px] w-[85%] object-cover rounded-xl shadow-lg"
+            className="h-[380px] w-[85%] object-cover rounded-xl shadow-lg"
           />
         </div>
 
@@ -39,31 +41,10 @@ export default function ContactMap () {
               Enquire at twoshires.fabrication@outlook.com <br />
               or call 07725910601 
             </p>
-           <p>
-           Bespoke Fabrications of Cheshire are a family run business with over 70 years of combined 
-            experience in the steel fabrication industry. We operate nationwide specializing in 
-            steel beams, sheet metal, and all other forms of steel construction.
-           </p>
         </div>
       </section>
 
-      {/* Contact Info Section */}
-      <section className="bg-blue-500 text-white p-6 flex flex-col md:flex-row justify-around items-center gap-6 text-center">
-        <div>
-          <h3 className="text-lg font-bold">Email</h3>
-          <h4 className="mt-2 font-light">twoshires.fabrication@outlook.com</h4>
-        </div>
-        <div>
-          <h3 className="text-lg font-bold">Phone</h3>
-          <h4 className="mt-2 font-light">07725910601</h4>
-        </div>
-        <div>
-          <h3 className="text-lg font-bold">Address</h3>
-          <h4 className="mt-2 font-light">
-            Holme Farm, Marsh Lane, Ince, Chester CH2 4NR
-          </h4>
-        </div>
-      </section>
+      <Footer />
     </div>
   );
 }

@@ -1,16 +1,24 @@
 import LinkButton from "../../components/LinkButton";
+import { Fade } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
+
 
 export default function Cutting() {
+  const images = [
+    "/assets/images/9ee06405-5b28-4471-b0db-f755869565b1.JPG",
+    "/assets/images/PHOTO-2023-10-14-18-55-15.jpg",
+    "/assets/images/1fdba7d3-9f04-45db-9d5c-60ec909ffa9e.JPG",
+  ];
   return (
     <div className="w-full flex flex-col lg:flex-row bg-black text-white" id="cutting">
       {/* Left Side */}
-      <div className="w-full lg:w-2/5 p-6 space-y-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-400">
+      <div className="w-full  p-6 space-y-8">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-primary">
           The Full Plasma Cutting Service
         </h2>
 
-        <div className="bg-zinc-900 p-4 rounded-lg border-b-4 border-blue-500">
-          <h3 className="text-2xl text-center font-semibold bg-blue-500 py-2 rounded mb-4">
+        <div className="bg-zinc-900 p-4 rounded-lg border-b-4 border-primary">
+          <h3 className="text-2xl text-center font-semibold bg-primary py-2 rounded mb-4">
             Full Service
           </h3>
           <ul className="space-y-2 text-center text-lg">
@@ -32,8 +40,8 @@ export default function Cutting() {
         </div>
       </div>
 
-      {/* Right Side */}
-      <div className="w-full lg:w-3/5 flex flex-col">
+      {/* middle Side */}
+      <div className="w-full flex flex-col">
         {/* Top Level */}
         <div
           className="p-6 space-y-6 bg-cover bg-center"
@@ -83,21 +91,24 @@ export default function Cutting() {
                 Choose from a variety of sheet metals across a wide range of
                 strength, conductivity, weight, and corrosion-resistance.
               </p>
-              <div className="flex gap-4 mt-4">
-                <img
-                  src="/assets/images/0feb7f01-92ad-44fe-ba66-26e2894531d0.JPG"
-                  alt="Material 1"
-                  className="w-1/2 h-36 object-cover rounded-lg"
-                />
-                <img
-                  src="/assets/images/PHOTO-2024-11-15-20-09-12.jpg"
-                  alt="Material 2"
-                  className="w-1/2 h-36 object-cover rounded-lg"
-                />
-              </div>
             </div>
           </section>
         </div>
+      </div>
+      
+      {/* right Side */}
+      <div className="w-full rounded-xl shadow-md overflow-hidden p-5">
+            <Fade duration={4000} arrows={false} pauseOnHover={false}>
+              {images.map((src, idx) => (
+                <div key={idx} className="w-full h-[520px]">
+                  <img
+                    src={src}
+                    alt={`Service slide ${idx + 1}`}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              ))}
+            </Fade>
       </div>
     </div>
   );
