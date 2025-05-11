@@ -17,6 +17,19 @@
   z-index: 1;
 }
 
+#bW_mobile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../../public/assets/images/weld-grad.gif");
+  background-size: cover;
+  background-position: center;
+  background-position: center;
+  z-index: 1;
+}
+
+
+
 #bW_leftside div {
   width: 100%;
   flex: 1;

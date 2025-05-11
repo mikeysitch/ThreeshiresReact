@@ -41,7 +41,7 @@
 
 .small-text {
   font-size: 1.3em;
-  color: black;
+  color: white;
 }
 
 .call_to_action {
@@ -51,5 +51,14 @@
 
 /*  === MEDIA QUERIES === */
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
+  #hero-img  {
+    height: auto;
+  }
+  .hero-text {
+    text-align: center;
+  }
+  .small-text {
+    display: none;
+  }
 }
